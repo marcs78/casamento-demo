@@ -1,0 +1,9 @@
+{
+  "name": "Anita & Giuseppe - Casamento Demo",
+  "short_name": "A & G Demo",
+  "description": "Demonstração Comercial · Convite Digital Interativo & Gestão de Casamento (Anita & Giuseppe)",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbfaf8",
+  "theme_color": "#fbfaf8"
+}

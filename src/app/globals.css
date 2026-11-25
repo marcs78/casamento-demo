@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #FAF7F0;
+  --color-surface: #FFFFFF;
+  --color-ink: #3E2723;
+  --color-muted: #6E5F57;
+  --color-line: #E8E2D8;
+  --color-rose: #C17767;
+  --color-rose-light: #FBF2EF;
+  --color-rose-border: #E8CBC3;
+  --color-sage: #5F6F52;
+  --color-sage-light: #F0F4ED;
+  --color-sage-border: #C8D4C0;
+  --color-gold: #B38F4D;
+}
+
+:root {
+  color-scheme: light;
+  --paper: #FAF7F0;
+  --surface: #FFFFFF;
+  --ink: #3E2723;
+  --muted: #6E5F57;
+  --line: #E8E2D8;
+  --rose: #C17767;
+  --rose-light: #FBF2EF;
+  --rose-border: #E8CBC3;
+  --sage: #5F6F52;
+  --sage-light: #F0F4ED;
+  --sage-border: #C8D4C0;
+  --gold: #B38F4D;
+}
+
+html {
+  background-color: #F4EFEA;
+  color: #3E2723;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100vw;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F4EFEA;
+  background-image: radial-gradient(ellipse at 50% 15%, #FAF7F2 0%, #EDE6DC 60%, #E3D9CC 100%);
+  color: #3E2723;
+  font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  min-height: 100dvh;
+  max-width: 100vw;
+  overflow-x: clip;
+}
+
+.font-serif {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-feature-settings: "lnum" 1, "tnum" 1;
+}
+
+.font-antique {
+  font-family: var(--font-antique), var(--font-pirata), "Old English Text MT", Georgia, serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.paper-texture {
+  background-color: #FAF7F0;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* Utilitários diretos para garantir que mesmo classes sem prefixo @theme funcionem 100% */
+.text-ink { color: #3E2723; }
+.text-muted { color: #6E5F57; }
+.text-rose { color: #C17767; }
+.text-sage { color: #5F6F52; }
+.text-gold { color: #B38F4D; }
+.text-paper { color: #FAF7F0; }
+
+.bg-paper { background-color: #FAF7F0; }
+.bg-surface { background-color: #FFFFFF; }
+.bg-rose { background-color: #C17767; }
+.bg-rose-light { background-color: #FBF2EF; }
+.bg-sage { background-color: #5F6F52; }
+.bg-sage-light { background-color: #F0F4ED; }
+.bg-ink { background-color: #3E2723; }
+
+.border-line { border-color: #E8E2D8; }
+.border-rose { border-color: #C17767; }
+.border-rose-border { border-color: #E8CBC3; }
+.border-sage { border-color: #5F6F52; }
+.border-sage-border { border-color: #C8D4C0; }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
